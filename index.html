@@ -123,6 +123,33 @@
     flex-wrap: wrap;
     margin-top: 36px;
   }
+  .quote{
+    margin: 32px 0 0;
+    padding: 24px 26px;
+    border-left: 4px solid var(--violet);
+    background: rgba(91,100,114,0.08);
+    color: var(--ink-soft);
+    font-size: 1rem;
+    font-style: arial;
+    line-height: 1.7;
+    border-radius: 14px;
+  }
+  .quote::before{
+    content: "“";
+    font-size: 2.4rem;
+    line-height: 0.6;
+    vertical-align: top;
+    margin-right: 10px;
+    color: var(--violet-deep);
+  }
+  .quote cite{
+    display: block;
+    margin-top: 18px;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    font-style: normal;
+    color: var(--ink);
+  }
   .btn{
     font-family: var(--font-display);
     font-weight: 600;
@@ -303,6 +330,10 @@
     <h1><span class="stroke">Gaspard Coquillion</span></h1>
     <p class="tagline">Lycéen</p>
     <p class="intro">Bienvenue sur mon site web ! Je suis un jeune lycéen en 1ère G, j'aime la musique, le cinéma, le sport, l'histoire et surtout les sciences ! Je m'intéresse beaucoup aux sciences biologiques et j'aimerais en faire mon domaine de travail ;)</p>
+    <blockquote class="quote">
+      Dans la vie, rien n'est à craindre, tout est à comprendre.
+      <cite>— Marie Curie</cite>
+    </blockquote>
     <div class="hero-actions">
       <a class="btn btn-primary" href="#contact">Me contacter</a>
     </div>
