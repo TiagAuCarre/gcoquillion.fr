@@ -214,13 +214,34 @@
 
   .entry{
     display: grid;
-    grid-template-columns: 110px 1fr;
-    gap: 22px;
+    grid-template-columns: 110px 120px 1fr;
+    gap: 30px;
     padding: 24px 0;
     border-top: 2px dashed #d8d2c4;
     position: relative;
+    align-items: start;
   }
   .entry:last-child{ border-bottom: 2px dashed #d8d2c4; }
+  .entry-logo{
+    width: 120px;
+    height: 120px;
+    border-radius: 18px;
+    border: 2px solid var(--ink-soft);
+    background: rgba(248,246,241,0.9);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    position: relative;
+  }
+  .entry-logo img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+    border-radius: inherit;
+  }
   .entry::before{
     content: "";
     position: absolute;
@@ -377,6 +398,9 @@
 
     <div class="entry">
       <div class="entry-date">2025 — auj.</div>
+      <div class="entry-logo">
+        <img src="aiguerande.webp" alt="Logo Lycée Aiguerande" />
+      </div>
       <div>
         <div class="entry-title">Lycée Aiguerande, Belleville</div>
         <div class="entry-place">Seconde et Première générale</div>
@@ -387,6 +411,9 @@
 
     <div class="entry">
       <div class="entry-date">2021 — 2025</div>
+      <div class="entry-logo">
+        <img src="collège VDA.png" alt="Logo Collège du Val d'Ardières" />
+      </div>
       <div>
         <div class="entry-title">Collège du Val d'Ardières, Beaujeu</div>
         <div class="entry-place">Formation générale collégienne</div>
@@ -406,6 +433,9 @@
 
     <div class="entry">
       <div class="entry-date">Juin 2026</div>
+      <div class="entry-logo">
+        <img src="Lyon-1-Universite_Grapheine_2026.jpeg" alt="Stage Université Lyon 1" />
+      </div>
       <div>
         <div class="entry-title">Stage à l'université Lyon 1</div>
         <div class="entry-place">ENS de Lyon, Institut Camille Jordan, Institut Lumière Matière, Observatoire de Lyon, IUT Lyon 1 et Laboratoire de Chimie</div>
@@ -415,6 +445,9 @@
 
     <div class="entry">
       <div class="entry-date">Nov. 2024</div>
+      <div class="entry-logo">
+        <img src="hcl.webp" alt="Stage HCL Lyon 4" />
+      </div>
       <div>
         <div class="entry-title">Stage au laboratoire de biologie médicale et d'anatomie pathologique Nord, Lyon 4</div>
         <div class="entry-place">Institut des Agents Infectieux, Hospices Civils de Lyon, Lyon 4</div>
@@ -424,6 +457,9 @@
 
     <div class="entry">
       <div class="entry-date">Juin 2024</div>
+      <div class="entry-logo">
+        <img src="rep-fra.jpg" alt="Stage mairie Cercié" />
+      </div>
       <div>
         <div class="entry-title">Stage d'observation</div>
         <div class="entry-place">Secrétariat général de mairie, Cercié 69220</div>
